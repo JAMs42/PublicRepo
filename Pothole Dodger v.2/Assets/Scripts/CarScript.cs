@@ -4,7 +4,7 @@ using System.Collections;
 public class CarScript : MonoBehaviour
 {
 	private int movSpd = 10;
-	private int hp = 3;
+	public int hp = 3;
 	
 	void FixedUpdate ()
 	{

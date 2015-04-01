@@ -12,7 +12,7 @@ public class ScoreKeeper : MonoBehaviour
 	{
 		score = 0f;
 		
-		scoreText = GameObject.FindGameObjectWithTag("canvas").transform.GetChild(0).transform.GetChild(0).GetComponent<Text>();
+		scoreText = GameObject.FindGameObjectWithTag("score").transform.GetChild(0).GetComponent<Text>();
 		
 		if ( scoreText )
 		{
