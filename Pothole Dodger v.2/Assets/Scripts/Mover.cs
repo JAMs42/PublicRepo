@@ -17,7 +17,7 @@ public class Mover : MonoBehaviour
 			else if ( rigidbody != null )
 			{
 				// for sprites
-				rigidbody.AddForce( new Vector3( 0f, -Config.GetNitroSpd(), 0f ));
+				rigidbody.AddForce( new Vector3( 0f, -Config.GetNitroSpd() * 10f, 0f ));
 			}
 		}
 		else if( Nitro.GetIsNitro().Equals( false ) )
@@ -32,7 +32,7 @@ public class Mover : MonoBehaviour
 			else if ( rigidbody != null )
 			{
 				// for sprites
-				rigidbody.AddForce( new Vector3( 0f, -Config.GetMapMovSpd(), 0f ));
+				rigidbody.AddForce( new Vector3( 0f, -Config.GetMapMovSpd() * 10f, 0f ));
 			}
 		}
 	}
