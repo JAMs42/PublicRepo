@@ -1,0 +1,127 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Home.master.cs" Inherits="MasterPages_Home" MasterPageFile="~/MasterPages/Main.master"%>
+
+
+<asp:Content ID="cTitle" ContentPlaceHolderID="CPHtitle" runat="server">
+    <asp:ContentPlaceHolder ID="cphTitle" runat="server">
+
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+
+<asp:content id="cHead" ContentPlaceHolderID="CPHhead" runat="server">
+    <asp:ContentPlaceHolder ID="cphHead" runat="server">
+
+    </asp:ContentPlaceHolder>
+</asp:content>
+
+
+<asp:content ID="cLeftSidebar" ContentPlaceHolderID="CPHleftSidebar" runat="server">
+    <asp:ContentPlaceHolder ID="cphLeftSidebar" runat="server">
+
+    </asp:ContentPlaceHolder>
+</asp:content>
+
+
+<asp:content id="cMain" ContentPlaceHolderID="CPHmain" runat="server">
+    <table id="tblUpcoming">
+        <tr>
+            <th colspan="2">
+                <h3>Upcoming Games</h3>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <table id="tblUpcoming1">
+                    <tr>
+                        <td>
+                            <asp:ContentPlaceHolder ID="upcoming1" runat="server" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Breath of Fire II
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Description!!
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table id="tblUpcoming2">
+                    <tr>
+                        <td>
+                            <asp:ContentPlaceHolder ID="upcoming2" runat="server" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Lunar 2: Eternal Blue
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Description!!
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table id="tblNewReleases">
+        <tr>
+            <th colspan="2">
+                <h3>New Releases</h3>
+            </th>
+        </tr>
+        <tr>
+            <td>
+                <table id="tblNewReleases1">
+                    <tr>
+                        <td>
+                            <asp:ContentPlaceHolder ID="newReleases1" runat="server" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Breath of Fire
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Description!!
+                        </td>
+                    </tr>
+                </table>
+            </td>
+            <td>
+                <table id="tblNewReleases2">
+                    <tr>
+                        <td>
+                            <asp:ContentPlaceHolder ID="newReleases2" runat="server" />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Lunar: Silver Star Story Complete
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Description!!
+                        </td>
+                    </tr>
+                </table>
+            </td>
+        </tr>
+    </table>
+</asp:content>
+
+
+<asp:content ID="cRightSidebar" ContentPlaceHolderID="CPHrightSidebar" runat="server">
+    <asp:ContentPlaceHolder ID="cphRightSidebar" runat="server">
+
+    </asp:ContentPlaceHolder>
+</asp:content>

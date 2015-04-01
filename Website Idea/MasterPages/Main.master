@@ -1,0 +1,81 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="MasterPages_Main" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>
+        <asp:ContentPlaceHolder ID="CPHtitle" runat="server">
+        </asp:ContentPlaceHolder>
+    </title>
+
+    <asp:ContentPlaceHolder id="CPHhead" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <div id="wrapper">
+        <form id="form1" runat="server">
+            <header>
+                <h1 id="headerText">Dreamer Games</h1>
+            </header>
+            <nav>
+                <table id="tblNav">
+                    <tr>
+                        <td>
+                            <a href="Home.aspx" class="navLink">Home</a>
+                            &nbsp;
+                            <a href="News.aspx" class="navLink">News</a>
+                            &nbsp;
+                            <a href="Games.aspx" class="navLink">Games</a>
+                            &nbsp;
+                            <a href="Support.aspx" class="navLink">Support</a>
+                            &nbsp;
+                            <a href="Forums.aspx" class="navLink">Forums</a>
+                            &nbsp;
+                            <a href="AboutUs.aspx" class="navLink">About Us</a>
+                            &nbsp;
+                            <a href="ContactUs.aspx" class="navLink">Contact Us</a>
+                        </td>
+                    </tr>
+                </table>
+            </nav>
+            <div id="middleWrapper">
+                <aside>
+                    <asp:ContentPlaceHolder ID="CPHleftSidebar" runat="server">
+
+                    </asp:ContentPlaceHolder>
+                </aside>
+                <section>
+                    <asp:ContentPlaceHolder id="CPHmain" runat="server">
+                    </asp:ContentPlaceHolder>
+                </section>
+                <aside>
+                    <asp:ContentPlaceHolder ID="CPHrightSidebar" runat="server">
+                    </asp:ContentPlaceHolder>
+                </aside>
+            </div>
+            <footer>
+                <table id="tblFooter">
+                    <tr>
+                        <td>
+                            <a href="Home.aspx">Home</a>
+                            &nbsp;
+                            <a href="News.aspx">News</a>
+                            &nbsp;
+                            <a href="Games.aspx">Games</a>
+                            &nbsp;
+                            <a href="Support.aspx">Support</a>
+                            &nbsp;
+                            <a href="Forums.aspx">Forums</a>
+                            &nbsp;
+                            <a href="ContactUs.aspx">Contact Us</a>
+                            &nbsp;
+                            <a href="AboutUs.aspx">About Us</a>
+                        </td>
+                    </tr>
+                </table>
+            </footer>
+        </form>
+    </div>
+</body>
+</html>
